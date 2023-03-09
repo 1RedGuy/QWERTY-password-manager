@@ -4,9 +4,20 @@ import "./Home.css";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import image from "../img/home-background.jpg";
+import Badge from 'react-bootstrap/Badge';
 
-function ColorSchemesExample() {
+const Home = () =>{
   return (
+    <div style={{
+      backgroundImage: `url(${image})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      objectFit: 'cover',
+      width: '100vw',
+      height: '100vh',
+      margin: '0 0',      
+    }} >
     <div className = "nav-bar">
       <Navbar className = "bg-transparent" bg="dark" variant="dark">
         <Container>
@@ -19,9 +30,15 @@ function ColorSchemesExample() {
         </Container>
       </Navbar>
     </div>
+    <div className = "position-absolute top-50 start-50 translate-middle "> 
+      <h1 className = "text-white ">
+      QWERTY PASSWORD MANAGER 
+      </h1>
+      </div>
+    </div>
   );
 }
-export default ColorSchemesExample;
+export default Home;
 
 
 
