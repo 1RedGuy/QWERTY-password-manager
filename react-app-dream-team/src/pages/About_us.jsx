@@ -8,9 +8,6 @@ const About_us = () =>{
         <div className="row">
             <div className="col-4">
             <ListGroup>
-      <ListGroup.Item>Cras justo odio</ListGroup.Item>
-      <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-      <ListGroup.Item>Morbi leo risus</ListGroup.Item>
     </ListGroup>
             </div>
             <div className="col-4">
