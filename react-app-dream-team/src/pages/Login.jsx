@@ -14,12 +14,21 @@ const Login = () => {
         objectFit: 'cover',
         width: '100vw',
         height: '100vh',
-        margin: '0 0'
+        margin: '0 0',
       }}
       className=""
     >
-      <Form className="border border-primary px-20 p-20 mx-20 position-absolute top-50 start-0 translate-middle-y translate-middle-x rounded">
-         <Form.Group className="mb-1 py-3 " controlId="formBasicEmail">
+      <div
+    className="loginform rounded px-20 p-20 mx-20 mb-5 
+    position-absolute top-50 start-0 translate-middle-y translate-middle-x "
+      style={{
+        boxShadow: '1px 1px 50px rgba(0, 0, 0, 0.4)',
+        border: '1px solid rgba(255, 255, 255, 0.1)'
+      }}
+      >
+      <Form>
+        <h1 className="text-center text-white position-top-50">Log in/Sign up</h1>
+         <Form.Group className="mb-1 p-1 width:10 " controlId="formBasicEmail">
           <Form.Label className="text-white">Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
         </Form.Group>
@@ -29,14 +38,15 @@ const Login = () => {
           <Form.Control  type="password" placeholder="Password" />
         </Form.Group>
         <div className="d-grid gap-2">
-        <Button className="btn btn-primary my-2" type="button">
+        <Button className="btn btn-primary my-2  " type="button">
           Log In
         </Button>
-        <Button className="btn btn-primary px-5" type="button">
+        <Button className="btn btn-primary " type="button">
           Sign Up
         </Button>
         </div>
       </Form>
+      </div>
       </div>
      );
 };
