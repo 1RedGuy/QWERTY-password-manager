@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import image from "../img/CyberSecurity.png";
 
-
 const Login = () => {
   return (
     <div
@@ -34,7 +33,7 @@ const Login = () => {
           <Form.Control type="email" placeholder="Enter email" />
         </Form.Group>
 
-        <Form.Group className="mb-3 py-3 " controlId="formBasicPassword">
+        <Form.Group className="mb-3 py-3 " controlId="formBasicPassword ">
           <Form.Label className="text-white ">Password</Form.Label>
           <Form.Control  type="password" placeholder="Password" />
         </Form.Group>
