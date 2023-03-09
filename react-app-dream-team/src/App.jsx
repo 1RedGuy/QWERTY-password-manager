@@ -1,11 +1,12 @@
 import './firebase.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import './pages/Login';
-import Login from './pages/Login';
+import 'bootstrap/dist/js/bootstrap.js';
+import './pages/Home';
+import Home from './pages/Home';
 const App = () => {
    return(
-     <Login/>
+     <Home/>
    );
 }
 export default App;
