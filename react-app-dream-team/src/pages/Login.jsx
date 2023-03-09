@@ -18,25 +18,27 @@ const Login = () => {
       }}
       className=""
     >
-      <Form className="border  border-0.5 py-5 px-7 mx-20 position-absolute top-50 start-0 translate-middle-y translate-middle-x rounded">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form className="border border-primary px-20 p-20 mx-20 position-absolute top-50 start-0 translate-middle-y translate-middle-x rounded">
+         <Form.Group className="mb-1 py-3 " controlId="formBasicEmail">
           <Form.Label className="text-white">Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-white">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+        <Form.Group className="mb-3 py-3 " controlId="formBasicPassword">
+          <Form.Label className="text-white ">Password</Form.Label>
+          <Form.Control  type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="primary" type="submit" className="">
-          Submit
+        <div className="d-grid gap-2">
+        <Button className="btn btn-primary my-2" type="button">
+          Log In
         </Button>
+        <Button className="btn btn-primary px-5" type="button">
+          Sign Up
+        </Button>
+        </div>
       </Form>
-    </div>
-  );
+      </div>
+     );
 };
 
 export default Login;
