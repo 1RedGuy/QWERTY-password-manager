@@ -6,6 +6,7 @@ import './pages/Home';
 import Home from './pages/Home';
 import './pages/Login';
 import Login from './pages/Login';
+import About_us from './pages/About_us.jsx';
 const App = () => {
    return(
      <Home/>
