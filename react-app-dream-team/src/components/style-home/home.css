@@ -15,6 +15,11 @@
   background-color: white;
   color: black;
 }
+.learn-more-button:active {
+  background-color: rgb(67, 64, 64) !important;
+  border-color: white !important;; 
+  color: white;
+}
 .get-started-button {
   background-color: transparent;
   border: solid 1px white;
@@ -30,6 +35,11 @@
 .get-started-button:hover {
   background-color: white;
   color: black;
+}
+.get-started-button:active {
+  background-color: rgb(67, 64, 64) !important;
+  border-color: white !important;; 
+  color: white;
 }
 .header{
   font-size: 50px;
