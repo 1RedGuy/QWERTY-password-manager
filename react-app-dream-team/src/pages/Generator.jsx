@@ -6,6 +6,7 @@ import "../components/style-home/home.css";
 import "../components/style-home/generator.css";
 import Header from "../components/header/Header";
 import { useState } from "react";
+
 const Generator = () => {
   const[generatedPassword, setGeneratedPassword] = useState("");
   const[allowNumbers, setAllowNumbers] = useState(false);
@@ -32,7 +33,7 @@ const Generator = () => {
       default:
         break;
     }
-  };   
+  };
   const generatePassword = () => {
   let char = "";
   if (allowNumbers)char += "0123456789";

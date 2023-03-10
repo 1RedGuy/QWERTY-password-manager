@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import image from "../img/home-background.jpg";
 import Button from "react-bootstrap/Button";
 import "../components/style-home/home.css";
 import Header from "../components/header/Header";
 import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>

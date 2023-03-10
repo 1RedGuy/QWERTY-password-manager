@@ -3,8 +3,49 @@ import "bootstrap/dist/js/bootstrap.js";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import image from "../img/CyberSecurity.png";
+import { useState } from "react";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { app } from "../firebase.js";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    const auth = getAuth();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/home");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
+  };
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    const auth = getAuth(app);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed up 
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
+  };
+
   return (
     <div
       style={{
@@ -31,20 +72,20 @@ const Login = () => {
           <h1 className="text-center text-white position-top-50">
             Log in/Sign up
           </h1>
-          <Form.Group className="mb-1 p-1 width:10 " controlId="formBasicEmail">
+          <Form.Group className="mb-1 p-1 width:10 " controlId="formBasicEmail" >
             <Form.Label className="text-white">Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} />
           </Form.Group>
 
-          <Form.Group className="mb-3 py-3 " controlId="formBasicPassword ">
+          <Form.Group className="mb-3 py-3 " controlId="formBasicPassword">
             <Form.Label className="text-white ">Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
           </Form.Group>
           <div className="d-grid gap-2">
-            <Button className="btn btn-primary my-2  " type="button">
+            <Button className="btn btn-primary my-2  " type="submit" onClick={handleSignIn}>
               Log In
             </Button>
-            <Button className="btn btn-primary " type="button">
+            <Button className="btn btn-primary " type="submit" onClick={handleSignUp}>
               Sign Up
             </Button>
           </div>

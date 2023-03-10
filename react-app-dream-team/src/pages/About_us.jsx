@@ -3,12 +3,9 @@ import "bootstrap/dist/js/bootstrap.js";
 import image from "../img/profile-icon.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import image1 from "../img/home-background.jpg";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/esm/Container";
 import "./About_us.css";
 import  Header from "../components/header/Header";
+
 const About_us = () => {
   return (
     <div
