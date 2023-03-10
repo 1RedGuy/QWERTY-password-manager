@@ -17,10 +17,5 @@
 
 .about-us-container{
     display: flex;
-    flex-direction: column;
-}
-
-.component-container{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    flex-direction: column
 }
