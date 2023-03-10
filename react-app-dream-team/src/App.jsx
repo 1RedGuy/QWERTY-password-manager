@@ -13,7 +13,11 @@ import Header from "./components/header/Header.jsx"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Login/>,
+  },
+  {
+  path:"/home",
+  element:<Home/>
   },
   {
     path: "/about-us",
@@ -22,13 +26,18 @@ const router = createBrowserRouter([
   {
     path:"/generator",
     element:<Generator/>
+  },
+  {
+    path:"/sign-out",
+    element:<Login/>
   }
 ]);
+console.log(router.path)
 
 const App = () => {
   return (
     <div className="application-styling">
-      <Header/>
+      {router.path == "/" ? <Header/> : null}
       <RouterProvider router={router} />
     </div>
   );

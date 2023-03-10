@@ -8,9 +8,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/esm/Container";
 import "../components/style-home/generator.css";
+import  Header from "../components/header/Header";
 const Generator = () => {
   return (
     <div>
+       <Header/>
       <div className="form-container">
         <Form className="form-div">
           <h1>Password Generator</h1>

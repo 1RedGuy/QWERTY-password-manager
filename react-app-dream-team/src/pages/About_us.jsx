@@ -8,13 +8,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/esm/Container";
 import "./About_us.css";
-
+import  Header from "../components/header/Header";
 const About_us = () => {
   return (
     <div
       className=""
     >
-    
+    <Header/>
       <div  className="about-us-container text-light text-center">
         <div className="component-container">
           <h1 className=" py-10 fs-1 ">

@@ -3,12 +3,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import image from "../img/home-background.jpg";
 import Button from 'react-bootstrap/Button';
 import "../components/style-home/home.css";
+import  Header from "../components/header/Header";
 const Home = () =>{
   return (
-    <div style={{
-   
-    }} >
-    
+    <div >
+    <Header/>
     <div className = "position-absolute top-50 start-50 translate-middle "> 
       <h1 className = "header text-white text-bold text-center">
       QWERTY PASSWORD MANAGER 

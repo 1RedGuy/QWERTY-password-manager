@@ -10,7 +10,7 @@ const Header = () => {
     <div>
       <Navbar  className="header-navbar">
           <Container className="nav-container mr = 20px">
-            <Navbar.Brand className="my-logo" href="/">
+            <Navbar.Brand className="my-logo" href="/home">
               QWERTY
             </Navbar.Brand>
             <Nav className="me-auto">
@@ -23,7 +23,7 @@ const Header = () => {
               <Nav.Link className="about-us" href="/about-us">
                 About us
               </Nav.Link>
-              <Nav.Link className="sign-out" href="#sign-out">
+              <Nav.Link className="sign-out" href="/sign-out">
                 Sign Out
               </Nav.Link>
             </Nav>
