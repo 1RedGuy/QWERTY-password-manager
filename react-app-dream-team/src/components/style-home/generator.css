@@ -10,13 +10,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1000;
+  padding-top: 60px;
 }
 
 .form-div {
   width: 400px;
-  height: 600px;
+  background: #00000047;
+  padding: 4rem 1.4rem;
+  backdrop-filter: blur(15px);
+  border: 1px solid #ffffff1f;
+  border-radius: 1rem;
 }
 header-gen{
   color: white;
+}
+.generate-button{
+  margin-top: 25px;
+  text-align: center;
+
+} 
+.checkboxes{
+  margin-top: 10px;
+}
+.thingy{
+  text-align: center;
+}
+.checkboxes{
+  text-align: left !important; 
 }
