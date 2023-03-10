@@ -24,7 +24,7 @@
   }
   .passwords, .generator, .about-us, .sign-out{
     display: inline-block;
-     color: white; 
+    color: white !important; 
     margin-top: 20px;
     width: 110px;
     font-size: 20px;

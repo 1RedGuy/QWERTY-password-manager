@@ -10,10 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 1000;
 }
 
 .form-div {
   width: 400px;
   height: 600px;
+}
+header-gen{
+  color: white;
 }
