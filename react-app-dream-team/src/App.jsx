@@ -7,9 +7,11 @@ import Home from './pages/Home';
 import './pages/Login';
 import Login from './pages/Login';
 import About_us from './pages/About_us.jsx';   
+import Generator from './pages/Generator.jsx';
 const App = () => {
   return(
    <About_us/>
+
 );
   } 
 export default App;

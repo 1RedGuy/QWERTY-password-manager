@@ -1,0 +1,19 @@
+
+.heading-generator{
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 200px !important;
+    padding-top: 0px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-div {
+  width: 400px;
+  height: 600px;
+}
