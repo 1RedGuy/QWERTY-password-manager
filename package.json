@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "firebase": "^9.17.2"
+    "firebase": "^9.17.2",
+    "react-dotenv": "^0.1.3"
   }
 }
