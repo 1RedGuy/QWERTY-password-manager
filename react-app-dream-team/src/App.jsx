@@ -9,7 +9,7 @@ import Login from './pages/Login';
 import About_us from './pages/About_us.jsx';   
 const App = () => {
   return(
-   <About_us/>
+   <Home/>
 );
   } 
 export default App;

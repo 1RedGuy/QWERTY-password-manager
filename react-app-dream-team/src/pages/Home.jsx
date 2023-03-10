@@ -19,12 +19,13 @@ const Home = () =>{
     }} >
     <div className = "nav-bar">
       <Navbar className = "bg-transparent" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Container className="nav-container mr = 20px">
+          <Navbar.Brand className = "my-logo" href="#home">QWERTY</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link className = "Home text-dark" href="#home">Home</Nav.Link>
-            <Nav.Link className = "Passwords" href="#features">Features</Nav.Link>
-            <Nav.Link className = "About us" href="#pricing">Pricing</Nav.Link>
+              <Nav.Link className = "generator" href="#about-us">Generator</Nav.Link>
+              <Nav.Link className = "passwords" href="#passwords">Passwords</Nav.Link>
+              <Nav.Link className = "about-us" href="#about-us">About us</Nav.Link>
+              <Nav.Link className = "sign-out" href="#sign-out">Sign Out</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

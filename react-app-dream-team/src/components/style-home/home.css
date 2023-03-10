@@ -41,3 +41,34 @@
   text-align: center;
   margin-left: 150px;
 }
+.nav-container{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.my-logo{
+  font-size: 28px;
+}
+.me-auto{
+  margin-left: 720px;
+  text-align: center;
+}
+.passwords, .generator, .about-us, .sign-out{
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  width: 110px;
+  font-size: 20px;
+  margin-left: 20px; 
+  text-align: right;
+}
+.sign-out{
+  margin-right: 20px;
+}
+.nav-container{
+  width: 1420px;
+  margin-right: 20px !important;
+}
+.my-logo:hover{
+  transition: 0.2s;
+  color: rgba(255, 255, 255, 0.5);
+}
