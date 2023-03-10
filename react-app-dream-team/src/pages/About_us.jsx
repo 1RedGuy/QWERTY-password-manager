@@ -12,41 +12,9 @@ import "./About_us.css";
 const About_us = () => {
   return (
     <div
-      style={{
-        backgroundImage: `url(${image1})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        objectFit: "cover",
-        width: "100vw",
-        height: "100vh",
-        margin: "0 0",
-      }}
       className=""
     >
-      <div className="nav-bar">
-        <Navbar className="bg-transparent" bg="dark" variant="dark">
-          <Container className="nav-container mr = 20px">
-            <Navbar.Brand className="my-logo" href="#home">
-              QWERTY
-            </Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link className="generator" href="#about-us">
-                Generator
-              </Nav.Link>
-              <Nav.Link className="passwords" href="#passwords">
-                Passwords
-              </Nav.Link>
-              <Nav.Link className="about-us" href="#about-us">
-                About us
-              </Nav.Link>
-              <Nav.Link className="sign-out" href="#sign-out">
-                Sign Out
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-      </div>
-
+    
       <div  className="about-us-container text-light text-center">
         <div className="component-container">
           <h1 className=" py-10 fs-1 ">

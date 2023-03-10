@@ -1,3 +1,10 @@
-.background-image{
-    object-fit: ;
+.application-styling {
+  background-image: url("./img/home-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0;
+  color: white;
 }
