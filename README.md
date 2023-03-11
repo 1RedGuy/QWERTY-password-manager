@@ -3,9 +3,8 @@
 QWERTY е password-manager, който има за цел да ви помогне да записвате сигурно паролите си, 
 съдържа и password generator който ви генерира случайна парлола на база на това какво сте избрали като опции за паролата
 # Презентация:<br/>
-[Power Point Presentation](https://onedrive.live.com/edit.aspx?action=edit&resid=5A593E41C87EF180!8245&ithint=file%2cpptx&action=edit&ct=1678500556142&wdNewAndOpenCt=1678500556142&wdPreviousSession=87216afc-fe0e-415a-b22d-2629b63f2528&wdOrigin=OFFICECOM-WEB.START.UPLOAD)
-
-
+  Power Point:<br/>
+[Линк към PowerPoint Online](https://onedrive.live.com/edit.aspx?resid=72D331AA64297DE1!861&cid=72d331aa64297de1&CT=1678513504872&OR=ItemsView)<br/>
 # Използвани технологии:
  # Web:<br />
   [HTML](https://html.com/) <br />
