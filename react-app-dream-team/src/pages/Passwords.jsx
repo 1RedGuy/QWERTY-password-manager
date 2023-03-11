@@ -3,7 +3,9 @@ import "../components/style-home/passwords.css";
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-
+import image from "../img/google-logo.png";
+import image1 from "../img/twitter-logo.png";
+import image2 from "../img/insta-logo.png";
 function PassEditor() {
   const [showModal, setShowModal] = useState(false);
 
@@ -53,6 +55,37 @@ function PassEditor() {
         </Modal.Footer>
       </Modal>
       </div>
+      <div className="container-1">
+        <div className="container-div-1">
+          <img src={image} alt="google-logo" className="google-logo"/>
+        <label style={{
+          marginLeft: "5px",
+        }}>Google</label>
+        <button className = "open-button" style = {{
+          marginLeft: "195px",
+          paddingBottom: "15px",
+        }}> Open </button>
+        </div>
+      </div>
+      
+      <div className="container-2">
+        <div className="container-div-2">
+          <img src={image1} alt="twitter-logo" className="twitter-logo"/>
+        <label>Twitter</label>
+        <button className = "twitter-open-button"
+        > Open </button>
+        </div>
+      </div>
+
+      <div className="container-3">
+        <div className="container-div-3">
+          <img src={image2} alt="insta-logo" className="insta-logo"/>
+        <label 
+        >Instagram</label>
+        <button className = "open-button"> Open </button>
+        </div>
+      </div>
+
     </div>
   );
 }
